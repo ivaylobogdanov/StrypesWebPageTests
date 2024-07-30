@@ -97,10 +97,10 @@ E:\QA\Strypes\StrypesHomePage\StrypesHomePageTests\obj\Debug\net8.0\StrypesHomeP
 E:\QA\Strypes\StrypesHomePage\StrypesHomePageTests\obj\Debug\net8.0\StrypesHomePageTests.AssemblyInfoInputs.cache
 E:\QA\Strypes\StrypesHomePage\StrypesHomePageTests\obj\Debug\net8.0\StrypesHomePageTests.AssemblyInfo.cs
 E:\QA\Strypes\StrypesHomePage\StrypesHomePageTests\obj\Debug\net8.0\StrypesHomePageTests.csproj.CoreCompileInputs.cache
+E:\QA\Strypes\StrypesHomePage\StrypesHomePageTests\obj\Debug\net8.0\StrypesHomePageTests.sourcelink.json
 E:\QA\Strypes\StrypesHomePage\StrypesHomePageTests\obj\Debug\net8.0\StrypesH.1D68A7F4.Up2Date
 E:\QA\Strypes\StrypesHomePage\StrypesHomePageTests\obj\Debug\net8.0\StrypesHomePageTests.dll
 E:\QA\Strypes\StrypesHomePage\StrypesHomePageTests\obj\Debug\net8.0\refint\StrypesHomePageTests.dll
 E:\QA\Strypes\StrypesHomePage\StrypesHomePageTests\obj\Debug\net8.0\StrypesHomePageTests.pdb
 E:\QA\Strypes\StrypesHomePage\StrypesHomePageTests\obj\Debug\net8.0\StrypesHomePageTests.genruntimeconfig.cache
 E:\QA\Strypes\StrypesHomePage\StrypesHomePageTests\obj\Debug\net8.0\ref\StrypesHomePageTests.dll
-E:\QA\Strypes\StrypesHomePage\StrypesHomePageTests\obj\Debug\net8.0\StrypesHomePageTests.sourcelink.json

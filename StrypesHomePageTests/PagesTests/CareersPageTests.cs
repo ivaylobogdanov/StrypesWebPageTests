@@ -30,9 +30,5 @@ namespace StrypesHomePageTests.PagesTests
 
             Assert.That(careersPage.GetPageHeadingText, Is.EqualTo("Automation Quality Assurance Engineer"));
         }
-
-
-
-
     }
 }
