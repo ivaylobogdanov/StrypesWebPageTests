@@ -19,13 +19,23 @@ jobs:
     - name: Set up .NET
       uses: actions/setup-dotnet@v3
       with:
+<<<<<<< HEAD
         dotnet-version: 8.0.x
 
     - name: Install dependencies
+=======
+        dotnet-version:6.0.x
+    
+    - name: install dependencies
+>>>>>>> edf6a63964dcc4e4aedd602e26b3087e3251a0a1
       run: dotnet restore
 
     - name: Build
       run: dotnet build --no-restore
 
     - name: Run tests
+<<<<<<< HEAD
       run: dotnet test --verbosity normal
+=======
+      run: dotnet tests --verbosity normal
+>>>>>>> edf6a63964dcc4e4aedd602e26b3087e3251a0a1
