@@ -25,8 +25,8 @@ namespace StrypesHomePageTests.PagesTests
         {
             var careersPage = new CareersPage(driver);
             careersPage.Open();
-            var viewButton = driver.FindElement(By.XPath("/html/body/div[5]/div[2]/div/div/main/article/div/div/section[6]/div/div/div/div/div/div/article[1]/div/section/div/div[1]/div/div/div/h2/a"));
-            viewButton.Click();
+
+            careersPage.ViewButton.Click();
 
             Assert.That(careersPage.GetPageHeadingText, Is.EqualTo("Automation Quality Assurance Engineer"));
         }

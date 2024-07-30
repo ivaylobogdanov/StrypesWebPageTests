@@ -12,13 +12,6 @@ namespace StrypesHomePageTests.Pages
 
         public IWebElement ElementHeadingTitle => driver.FindElement(By.CssSelector("h2 > span"));
 
-        public string GetHeadingTitle()
-        {
-            string headingTitleText = this.ElementHeadingTitle.Text;
-            return headingTitleText;
-        }
-
-        //IWebElement ElementHeadingQA => driver.FindElement(By.XPath("/html/body/div[6]/div[2]/div/div/main/div/section[4]/div/div/div/div/div/h2"));
-
+        public IWebElement ViewButton => driver.FindElement(By.XPath("//section[6]/div/div/div/div/div/div/article[1]/div/section/div/div[2]/div/div/div/div/a"));
     }
 }

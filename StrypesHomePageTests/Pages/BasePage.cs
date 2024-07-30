@@ -1,4 +1,5 @@
 ﻿using OpenQA.Selenium;
+using OpenQA.Selenium.Support.UI;
 
 namespace StrypesHomePageTests.Pages
 {
@@ -14,12 +15,8 @@ namespace StrypesHomePageTests.Pages
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
         }
 
-        //public IWebElement CareersLink => driver.FindElement(By.LinkText("Careers"));
-
-        //public IWebElement CareersLink => driver.FindElement(By.XPath("//*[@id=\"menu-1-50af2d3b\"]/li[7]/a"));
-
-        public IWebElement AboutLink => driver.FindElement(By.XPath("/html/body/div[5]/div[1]/section[1]/div/div/div/section[2]/div/div[2]/div/div/div/nav[1]/ul/li[2]/a"));
-        public IWebElement SurvicesLink => driver.FindElement(By.XPath("/html/body/div[5]/div[1]/section[1]/div/div/div/section[2]/div/div[2]/div/div/div/nav[1]/ul/li[3]/a"));
+        public IWebElement AboutLink => driver.FindElement(By.XPath("//section[1]/div/div/div/section[2]/div/div[2]/div/div/div/nav[1]/ul/li[2]/a"));
+        public IWebElement SurvicesLink => driver.FindElement(By.XPath("//section[1]/div/div/div/section[2]/div/div[2]/div/div/div/nav[1]/ul/li[3]/a"));
 
         public IWebElement PageHeading => driver.FindElement(By.CssSelector("h1"));
 

@@ -103,3 +103,4 @@ E:\QA\Strypes\StrypesHomePage\StrypesHomePageTests\obj\Debug\net8.0\refint\Stryp
 E:\QA\Strypes\StrypesHomePage\StrypesHomePageTests\obj\Debug\net8.0\StrypesHomePageTests.pdb
 E:\QA\Strypes\StrypesHomePage\StrypesHomePageTests\obj\Debug\net8.0\StrypesHomePageTests.genruntimeconfig.cache
 E:\QA\Strypes\StrypesHomePage\StrypesHomePageTests\obj\Debug\net8.0\ref\StrypesHomePageTests.dll
+E:\QA\Strypes\StrypesHomePage\StrypesHomePageTests\obj\Debug\net8.0\StrypesHomePageTests.sourcelink.json
