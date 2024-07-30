@@ -19,13 +19,13 @@ jobs:
     - name: Set up .NET
       uses: actions/setup-dotnet@v3
       with:
-        dotnet-version:8.0.x
-    
-    - name: install dependencies
+        dotnet-version: 8.0.x
+
+    - name: Install dependencies
       run: dotnet restore
 
     - name: Build
       run: dotnet build --no-restore
 
     - name: Run tests
-      run: dotnet tests --verbosity normal
+      run: dotnet test --verbosity normal
