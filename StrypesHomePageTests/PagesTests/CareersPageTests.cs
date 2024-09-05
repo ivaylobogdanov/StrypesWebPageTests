@@ -1,21 +1,18 @@
-﻿
-
-using OpenQA.Selenium;
-using OpenQA.Selenium.Support.UI;
+﻿using OpenQA.Selenium.Interactions;
 using StrypesHomePageTests.Pages;
 
 namespace StrypesHomePageTests.PagesTests
 {
-    public class CareersPageTests : BaseTests
+    public class CareersPageTests : BasePageTests
     {
         [Test]
         public void Test_CareersPage_Content()
         {
-            var careersPage = new CareersPage(driver);
-            careersPage.Open();
+            careersPage.OpenPage();
+            basePage.AcceptAllCookiesButton.Click();
 
             Assert.Multiple(() => {
-                Assert.That(careersPage.GetPageTitle(), Is.EqualTo("Careers - Strypes"));
+                Assert.That(careersPage.GetPageTitle(), Is.EqualTo("Careers - Join the ICT Strypes team"));
                 Assert.That(careersPage.GetPageHeadingText, Is.EqualTo("Our awesome team"));
             });
         }
@@ -23,10 +20,13 @@ namespace StrypesHomePageTests.PagesTests
         [Test]
         public void Test_CareersPage_Functionalities()
         {
-            var careersPage = new CareersPage(driver);
-            careersPage.Open();
+            careersPage.OpenPage();
+            
+            var viewButton = careersPage.ElementResultArticle[0];
+            Actions actions = new Actions(driver);
+            actions.MoveToElement(viewButton).Perform();
 
-            careersPage.ViewButton.Click();
+            careersPage.ElementResultArticle[0].Click();
 
             Assert.That(careersPage.GetPageHeadingText, Is.EqualTo("Automation Quality Assurance Engineer"));
         }
