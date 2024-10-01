@@ -13,15 +13,15 @@ namespace StrypesHomePageTests.Pages
 
         WebDriverWait Wait;
 
-        public readonly string Url = BaseUrl + "/?s/";
+        public readonly string Url = BaseUrl;
 
-        public IWebElement ElementSearchInput => driver.FindElement(By.XPath("//input[@id='elementor-search-form-e64b8f7']"));
-        public IWebElement ElementSearchButton => driver.FindElement(By.XPath("//button/i"));
+        //public IWebElement ElementSearch => driver.FindElement(By.XPath("//div[@class='elementor-search-form__toggle']/i[@class='fas fa-search']"));
+        public IWebElement ElementSearchLens => driver.FindElement(By.XPath("//div/i[@class='fas fa-search']"));
+        public IWebElement ElementSearchInput => driver.FindElement(By.XPath("//input[@id='elementor-search-form-5295a54a']"));
 
         public ReadOnlyCollection<IWebElement> ElementResultArticle => this.Wait.Until(driver => driver.FindElements(By.XPath("//a[@class='elementor-post__read-more']")));
 
-        public IWebElement ElementResultArticleHeading => driver.FindElement(By.CssSelector("div>h1"));
-
+        public IReadOnlyCollection<IWebElement> allElements => driver.FindElements(By.XPath("//*"));
 
         public void OpenPage()
         {

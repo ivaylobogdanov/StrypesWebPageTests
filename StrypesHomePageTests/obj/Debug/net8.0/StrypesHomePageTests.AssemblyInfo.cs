@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("StrypesHomePageTests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+92ca29424785010042b4b2f80e956fc7777466f1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b4e148a7e560710152e7b6b452ba258ec8a64fc5")]
 [assembly: System.Reflection.AssemblyProductAttribute("StrypesHomePageTests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StrypesHomePageTests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

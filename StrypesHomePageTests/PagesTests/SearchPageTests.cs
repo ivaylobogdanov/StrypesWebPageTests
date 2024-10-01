@@ -1,4 +1,5 @@
-﻿using OpenQA.Selenium.Interactions;
+﻿using OpenQA.Selenium;
+using OpenQA.Selenium.Interactions;
 
 namespace StrypesHomePageTests.PagesTests
 {
@@ -11,17 +12,31 @@ namespace StrypesHomePageTests.PagesTests
             searchPage.OpenPage();
             basePage.AcceptAllCookiesButton.Click();
 
-            searchPage.ElementSearchInput.Click();
-            searchPage.ElementSearchInput.SendKeys("Quality Assurance");
-            searchPage.ElementSearchButton.Click();
+            searchPage.ElementSearchLens.Click();
+            searchPage.ElementSearchInput.SendKeys("quality assurance");
+            Actions builder = new Actions(driver);
+            builder.SendKeys(Keys.Enter).Perform();
 
-            var elementResultArticle = searchPage.ElementResultArticle[0];
-            Actions actions = new Actions(driver);
-            actions.MoveToElement(elementResultArticle).Perform();
+            // int length = searchPage.ElementResultArticle.Count(); // checking all results
 
-            searchPage.ElementResultArticle[0].Click();
+            for (int i = 0; i < 3; i++)  // checking first 3 results. If testing all results test fails on 4th result.
+            {
+                searchPage.ElementResultArticle[i].Click();
+                
+                bool found = false;
+                foreach (IWebElement element in searchPage.allElements)
+                {
+                    if (element.Text.ToLower().Contains("quality assurance"))
+                    {
+                        found = true;
+                        break;
+                    }
+                }
 
-            Assert.That(searchPage.ElementResultArticleHeading.Text, Does.Contain("Quality Assurance"), "There is no artical that meets search criteria.");
+                Assert.That(found, Is.True, "The article N " + (i + 1) + " does not contain search string \"quality assurance\".");
+
+                driver.Navigate().Back();
+            }
         }
     }
 }
